@@ -31,7 +31,7 @@ const Hero = () => {
     <section className="h-screen bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center text-center">
       <div className="flex flex-col md:flex-row items-center justify-center content-center">
         <img
-          src="/public/images/imagen-cv.jpeg"
+          src="https://avatars.githubusercontent.com/u/84150509?s=400&u=50de07a33162c409cbea6a0dcfcfdbc853c9c982&v=4"
           alt="Foto de perfil"
           className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-lg object-cover mb-6 md:mb-0 transition-transform duration-800 ease-in-out transform hover:scale-110 hover:rotate-3 hover:opacity-90"
         />
