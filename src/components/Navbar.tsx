@@ -55,7 +55,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 p-2 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white dark:bg-gray-900 p-2 shadow-md fixed top-0 left-0 w-full max-w-full z-50">
       <div className="w-full md:max-w-7xl mx-auto sm:px-6 lg:px-4 flex justify-between items-center h-16">
         <div className="md:hidden flex items-center">
           <button
