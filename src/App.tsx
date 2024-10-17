@@ -12,7 +12,7 @@ function App() {
     <LanguageProvider>
       <div className="App bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 max-w-full">
         <Navbar />
-        {/* <section id="home">
+        <section id="home">
           <Hero />
         </section>
         <section id="about">
@@ -29,7 +29,7 @@ function App() {
         </section>
         <section id="contact">
           <Footer />
-        </section> */}
+        </section>
       </div>
     </LanguageProvider>
   );

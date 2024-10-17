@@ -32,10 +32,10 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-center justify-center content-center">
         <img
           src="https://avatars.githubusercontent.com/u/84150509?s=400&u=50de07a33162c409cbea6a0dcfcfdbc853c9c982&v=4"
-          alt="Foto de perfil"
-          className="w-40 h-40 md:w-56 md:h-56 rounded-full shadow-lg object-cover mb-6 md:mb-0 transition-transform duration-800 ease-in-out transform hover:scale-110 hover:rotate-3 hover:opacity-90"
+          alt="Perfil photo"
+          className="w-2/4 h-2/4 md:w-56 mt-28 md:mt-0 md:h-56 rounded-full shadow-lg object-cover mb-6 md:mb-0 transition-transform duration-800 ease-in-out transform hover:scale-110 hover:rotate-3 hover:opacity-90"
         />
-        <div className="md:ml-8  md:w-2/4">
+        <div className="md:ml-0  md:w-2/4 p-6 ml-6">
           <h1 className="text-5xl font-bold mb-4 dark:text-white">
             {object.title[language]}
           </h1>

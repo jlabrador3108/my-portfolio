@@ -32,7 +32,7 @@ const About = () => {
     },
   };
   return (
-    <main className="flex justify-center">
+    <main className="flex justify-center mt-28">
       <section
         id="about"
         className="py-16 bg-white dark:bg-gray-900 text-center w-11/12 shadow-md rounded-md"
@@ -52,54 +52,56 @@ const About = () => {
           <h3 className="mt-10 text-3xl font-bold mb-6 dark:text-white">
             🔨 {object.tecnologies[language]}
           </h3>
-          <div className="flex justify-center space-x-8">
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/javascript/javascript-original.svg"
-              height="60"
-              width="60"
-            />
+          <div className="flex justify-center">
+            <div className="grid grid-cols-4 md:flex justify-center gap-8">
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/javascript/javascript-original.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/typescript/typescript-original.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/typescript/typescript-original.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/react/react-original-wordmark.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/react/react-original-wordmark.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nodejs/nodejs-original.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nodejs/nodejs-original.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nestjs/nestjs-original-wordmark.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nestjs/nestjs-original-wordmark.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original-wordmark.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original-wordmark.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original-wordmark.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/css3/css3-original-wordmark.svg"
+                height="60"
+                width="60"
+              />
 
-            <img
-              src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/php/php-original.svg"
-              height="60"
-              width="60"
-            />
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/php/php-original.svg"
+                height="60"
+                width="60"
+              />
+            </div>
           </div>
         </div>
       </section>
