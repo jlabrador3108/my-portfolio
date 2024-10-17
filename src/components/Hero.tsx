@@ -28,7 +28,7 @@ const Hero = () => {
     },
   };
   return (
-    <section className="h-screen bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center text-center">
+    <section className="h-screen w-full max-w-full bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center text-center">
       <div className="flex flex-col md:flex-row items-center justify-center content-center">
         <img
           src="https://avatars.githubusercontent.com/u/84150509?s=400&u=50de07a33162c409cbea6a0dcfcfdbc853c9c982&v=4"

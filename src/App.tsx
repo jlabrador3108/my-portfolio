@@ -10,7 +10,7 @@ import Education from "./components/Education";
 function App() {
   return (
     <LanguageProvider>
-      <div className="App bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+      <div className="App bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 w-full">
         <Navbar />
         <section id="home">
           <Hero />

@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white dark:bg-gray-900 p-2 shadow-md fixed top-0 left-0 w-full z-50">
-      <div className="max-w-7xl mx-auto sm:px-6 lg:px-4 flex justify-between items-center h-16">
+      <div className="w-full md:max-w-7xl mx-auto sm:px-6 lg:px-4 flex justify-between items-center h-16">
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
@@ -69,7 +69,7 @@ const Navbar = () => {
             )}
           </button>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="md:flex items-center space-x-2 hidden">
           <svg
             width="40px"
             height="40px"
@@ -84,9 +84,11 @@ const Navbar = () => {
           </svg>
           <h1 className="text-xl font-bold dark:text-white">Jorge Labrador</h1>
         </div>
-        <div className="flex items-center space-x-6">
-          <div className={`w-full md:block ${isMenuOpen ? "block" : "hidden"}`}>
-            <ul className="mr-8 flex flex-col fixed top-20 left-4 md:static md:flex-row md:space-x-6 items-start justify-between text-gray-900 dark:text-white text-lg">
+        <div className="flex items-center space-x-6 ">
+          <div
+            className={`w-full md:block ${isMenuOpen ? "block" : "hidden "}`}
+          >
+            <ul className="mr-8 flex flex-col bg-black text-white fixed top-20 left-0 px-6 py-2 md:bg-transparent md:static md:flex-row md:space-x-6 items-start justify-between text-gray-900 md:dark:text-white text-lg">
               <button
                 onClick={() => scrollToSection("home")}
                 className="text-gray-900 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300"
@@ -103,9 +105,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection("professional-experience")}
                 className="text-gray-900 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300"
               >
-                {language === "es"
-                  ? "Experiencia profesional"
-                  : "Professional experience"}
+                {language === "es" ? "Experiencia" : "Experience"}
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
