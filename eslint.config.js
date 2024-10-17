@@ -23,7 +23,10 @@ export default tseslint.config(
         "warn",
         { allowConstantExport: true },
       ],
-      "eslint-disable-next-line @typescript-eslint/no-explicit-any": off,
+      "no-unused-vars": ["warn"],
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+
     },
   }
 );
