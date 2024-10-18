@@ -30,30 +30,32 @@ const Hero = () => {
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
-    const handleScroll = () => {
-      const secondSection = document.getElementById("about");
-      const scrollY = window.scrollY;
+    if (window.innerWidth > 768) {
+      const handleScroll = () => {
+        const secondSection = document.getElementById("about");
+        const scrollY = window.scrollY;
 
-      const secondRect = secondSection?.getBoundingClientRect();
+        const secondRect = secondSection?.getBoundingClientRect();
 
-      if (
-        secondRect &&
-        scrollY < secondRect?.top + window.pageYOffset &&
-        scrollY > lastScrollY
-      ) {
-        const x = secondRect.left + window.pageXOffset;
-        const y = secondRect.top + window.pageYOffset;
-        window.scrollTo({ top: y - 100, left: x, behavior: "smooth" });
-      }
+        if (
+          secondRect &&
+          scrollY < secondRect?.top + window.pageYOffset &&
+          scrollY > lastScrollY
+        ) {
+          const x = secondRect.left + window.pageXOffset;
+          const y = secondRect.top + window.pageYOffset;
+          window.scrollTo({ top: y - 100, left: x, behavior: "smooth" });
+        }
 
-      lastScrollY = scrollY;
-    };
+        lastScrollY = scrollY;
+      };
 
-    window.addEventListener("scroll", handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, []);
 
   return (
