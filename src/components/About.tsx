@@ -41,9 +41,12 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-6 dark:text-white">
             🙋‍♂️ {object.title[language]}
           </h2>
-          {object.content[language].map((con: string) => {
+          {object.content[language].map((con: string, index) => {
             return (
-              <p className="text-gray-800 dark:text-gray-300 text-left mt-4 px-8">
+              <p
+                key={index}
+                className="text-gray-800 dark:text-gray-300 text-left mt-4 px-8"
+              >
                 {con}
               </p>
             );

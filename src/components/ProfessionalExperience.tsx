@@ -30,7 +30,7 @@ const ProfessionalExperience = () => {
         es: "Un sistema de representación geográfica en tiempo real en el que formo parte del equipo de desarrollo, construido con las siguientes herramientas: JavaScript, Ext.js, PHP, PostgreSQL, GitLab y OpenLayers. Este proyecto permite visualizar y gestionar información geoespacial de manera eficiente, ofreciendo una solución escalable y de alto rendimiento para análisis en tiempo real.",
       },
       image:
-        "https://misswood.eu/cdn/shop/files/Proyeccion-cilindrica-de-Miller.jpg?v=1635243955",
+        "https://st2.depositphotos.com/1021974/9025/i/450/depositphotos_90252302-stock-photo-city-maps-with-colorful-targets.jpg",
     },
     {
       place: "Freelance Project",

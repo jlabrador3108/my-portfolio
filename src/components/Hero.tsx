@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { LanguageContext } from "../context/LanguageContext";
 
@@ -16,9 +16,9 @@ const Hero = () => {
       en: "Hello! I’m Jorge Labrador",
     },
     content: {
-      es: "Desarrollador de software web full stack con casi 3 años de experiencia en el diseño, desarrollo e implementación de aplicaciones web robustas. Experto en Node.js, NestJS y React.js, con una pasión por resolver problemas y ofrecer soluciones escalables.",
+      es: "Desarrollador de software web full stack con casi 3 años de experiencia en el diseño, desarrollo e implementación de aplicaciones web robustas. Competente en Node.js, NestJS y React.js, con una pasión por resolver problemas y ofrecer soluciones escalables.",
       en:
-        "Full stack web software developer with nearly 3 years of experience in designing, developing, and implementing robust web applications." +
+        "Full stack web software developer with nearly 3 years of experience in designing, developing, and implementing robust web applications. " +
         "Proficient in Node.js, NestJS, React.js, with a passion for" +
         "problemsolving and delivering scalable solutions.",
     },
@@ -27,6 +27,35 @@ const Hero = () => {
       en: "Download CV",
     },
   };
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+      const secondSection = document.getElementById("about");
+      const scrollY = window.scrollY;
+
+      const secondRect = secondSection?.getBoundingClientRect();
+
+      if (
+        secondRect &&
+        scrollY < secondRect?.top + window.pageYOffset &&
+        scrollY > lastScrollY
+      ) {
+        const x = secondRect.left + window.pageXOffset;
+        const y = secondRect.top + window.pageYOffset;
+        window.scrollTo({ top: y - 100, left: x, behavior: "smooth" });
+      }
+
+      lastScrollY = scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="h-screen w-full max-w-full bg-gray-100 dark:bg-gray-800 flex flex-col justify-center items-center text-center">
       <div className="flex flex-col md:flex-row items-center justify-center content-center">

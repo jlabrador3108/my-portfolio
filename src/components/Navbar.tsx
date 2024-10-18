@@ -44,7 +44,15 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      // section.scrollIntoView({ behavior: "smooth" });
+      const el = document.getElementById(sectionId);
+      const rect = el?.getBoundingClientRect();
+
+      if (rect !== undefined) {
+        const x = rect.left + window.pageXOffset;
+        const y = rect.top + window.pageYOffset;
+        window.scrollTo({ top: y - 60, left: x, behavior: "smooth" });
+      }
     }
   };
 
