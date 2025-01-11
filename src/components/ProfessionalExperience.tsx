@@ -22,8 +22,8 @@ const ProfessionalExperience = () => {
         en: "Genesig",
       },
       period: {
-        en: "02/2022 – present | Havana, Cuba",
-        es: "02/2022 – presente | La Habana, Cuba",
+        en: "02/2022 – 07/2024 | Havana, Cuba",
+        es: "02/2022 – 07/2024 | La Habana, Cuba",
       },
       description: {
         en: "A real-time geographic representation system where I am part of the development team, built with the following tools: JavaScript, Ext.js, PHP, PostgreSQL, GitLab, and OpenLayers. This project enables the efficient visualization and management of geospatial data, providing a scalable and high-performance solution for real-time analysis.",
@@ -48,6 +48,22 @@ const ProfessionalExperience = () => {
       },
       image:
         "https://degerencia.com/wp-content/uploads/2021/02/pasarelas-Colombia-pagos-en-linea-pandemia-bienes-servicios-1024x638-1.jpg",
+    },{
+      place: "Guajiritos SRL",
+      title: {
+        es: "Guajiritos SRL",
+        en: "Guajiritos SRL",
+      },
+      period: {
+        en: "10/2024 – present | Havana, Cuba",
+        es: "10/2022 – presente | La Habana, Cuba",
+      },
+      description: {
+        en: "I have worked as a backend developer so far on two applications: Tienda, a marketplace application using technologies such as Node.js, Sequelize, MySQL, Elasticsearch, and GDS Turismo, an application for the tourism industry developed with NestJS, PostgreSQL, TypeORM, Redis, and Elasticsearch.",
+        es: "Me he desempeñado como desarrollador backend en dos aplicaciones hasta el momento: Tienda, una aplicación de marketplace que utiliza tecnologías como Node.js, Sequelize, MySQL, Elasticsearch y GDS Turismo, una aplicación orientada al sector turístico desarrollada con NestJS, PostgreSQL, TypeORM, Redis y Elasticsearch.",
+      },
+      image:
+        "https://www.guajiritos.com/assets/icons/icon-384x384.png",
     },
   ];
 

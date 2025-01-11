@@ -68,9 +68,9 @@ const About = () => {
                 height="60"
                 width="60"
               />
-
+              
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/react/react-original-wordmark.svg"
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nestjs/nestjs-original-wordmark.svg"
                 height="60"
                 width="60"
               />
@@ -79,13 +79,13 @@ const About = () => {
                 src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nodejs/nodejs-original.svg"
                 height="60"
                 width="60"
-              />
+              />   
 
               <img
-                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nestjs/nestjs-original-wordmark.svg"
+                src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/react/react-original-wordmark.svg"
                 height="60"
                 width="60"
-              />
+              />                         
 
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original-wordmark.svg"
