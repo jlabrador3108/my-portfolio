@@ -80,7 +80,8 @@ const Hero = () => {
             <div className="flex space-x-8">
               <a
                 href="/public/CV Jorge Labrador.pdf"
-                download
+                type="application/pdf"
+                download="CV_Jorge_Labrador.pdf"
                 className="mr-8 bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 transform hover:scale-105"
               >
                 {object.download[language]}
