@@ -20,12 +20,12 @@ const About = () => {
     },
     content: {
       es: [
-        "👉🏻 Soy un desarrollador full stack apasionado por crear experiencias digitales atractivas y eficientes. Con experiencia en desarrollo tanto del lado del cliente como del servidor, utilizo tecnologías modernas como React, Node.js y TailwindCSS para construir aplicaciones web dinámicas y escalables.",
+        "👉🏻 Soy un desarrollador full stack apasionado por crear experiencias digitales atractivas y eficientes. Con experiencia en desarrollo tanto del lado del cliente como del servidor, utilizo tecnologías modernas como Node.js, Python y Reactjs para construir aplicaciones web dinámicas y escalables.",
         "🚀 Me encanta resolver problemas complejos, optimizar el rendimiento y asegurarme de que cada proyecto en el que trabajo tenga un impacto positivo en los usuarios. Mi objetivo es transformar ideas en soluciones innovadoras y eficientes, siempre manteniendo un enfoque centrado en la experiencia del usuario y el diseño limpio.",
         "📚 Cuando no estoy codificando, me gusta aprender nuevas tecnologías, colaborar en proyectos de código abierto y seguir mejorando mis habilidades en este apasionante mundo del desarrollo web.",
       ],
       en: [
-        "👉🏻 I’m a full stack developer passionate about building engaging and efficient digital experiences. With expertise in both frontend and backend development, I use modern technologies like React, Node.js, and TailwindCSS to create dynamic and scalable web applications.",
+        "👉🏻 I’m a full stack developer passionate about building engaging and efficient digital experiences. With expertise in both frontend and backend development, I use modern technologies like Node.js, Python and Reactjs to create dynamic and scalable web applications.",
         "🚀 I thrive on solving complex problems, optimizing performance, and ensuring that every project I work on has a positive impact on users. My goal is to turn ideas into innovative and efficient solutions, always focusing on user experience and clean design.",
         "📚 When I'm not coding, I enjoy learning new technologies, contributing to open-source projects, and continuously improving my skills in this exciting world of web development.",
       ],
@@ -79,7 +79,19 @@ const About = () => {
                 src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/nodejs/nodejs-original.svg"
                 height="60"
                 width="60"
-              />   
+              />
+
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/python/python-original.svg"
+                height="60"
+                width="60"
+              /> 
+              
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/54cfe13ac10eaa1ef817a343ab0a9437eb3c2e08/icons/django/django-plain-wordmark.svg"
+                height="60"
+                width="60"
+              /> 
 
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/react/react-original-wordmark.svg"

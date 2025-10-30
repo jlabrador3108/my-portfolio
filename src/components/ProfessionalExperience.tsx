@@ -48,28 +48,45 @@ const ProfessionalExperience = () => {
       },
       image:
         "https://degerencia.com/wp-content/uploads/2021/02/pasarelas-Colombia-pagos-en-linea-pandemia-bienes-servicios-1024x638-1.jpg",
-    },{
+    },
+    {
       place: "Guajiritos SRL",
       title: {
         es: "Guajiritos SRL",
         en: "Guajiritos SRL",
       },
       period: {
-        en: "10/2024 – present | Havana, Cuba",
-        es: "10/2022 – presente | La Habana, Cuba",
+        en: "10/2024 – 08/2025 | Havana, Cuba",
+        es: "10/2024 – 08/2025 | La Habana, Cuba",
       },
       description: {
         en: "I have worked as a backend developer so far on two applications: Tienda, a marketplace application using technologies such as Node.js, Sequelize, MySQL, Elasticsearch, and GDS Turismo, an application for the tourism industry developed with NestJS, PostgreSQL, TypeORM, Redis, and Elasticsearch.",
         es: "Me he desempeñado como desarrollador backend en dos aplicaciones hasta el momento: Tienda, una aplicación de marketplace que utiliza tecnologías como Node.js, Sequelize, MySQL, Elasticsearch y GDS Turismo, una aplicación orientada al sector turístico desarrollada con NestJS, PostgreSQL, TypeORM, Redis y Elasticsearch.",
       },
+      image: "https://www.guajiritos.com/assets/icons/icon-384x384.png",
+    },
+    {
+      place: "Vibez Citizens",
+      title: {
+        es: "Vibez Citizens",
+        en: "Vibez Citizens",
+      },
+      period: {
+        en: "08/2025 – present | Remote",
+        es: "08/2025 – presente | Remoto",
+      },
+      description: {
+        en: "Building dynamic, data-driven applications with React and Supabase as part of a collaborative remote team.",
+        es: "Desarrollo de aplicaciones dinámicas basadas en datos con React y Supabase como parte de un equipo remoto colaborativo.",
+      },
       image:
-        "https://www.guajiritos.com/assets/icons/icon-384x384.png",
+        "https://thumbs.dreamstime.com/b/trabajo-independiente-desde-el-hogar-o-en-l%C3%ADnea-digital-lado-de-los-negocios-remoto-trabajando-con-computadora-port%C3%A1til-como-409878727.jpg",
     },
   ];
 
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-800">
-      <div className="container mx-auto p-8">
+    <section className="mt-10 py-20 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      <div className="container mx-auto px-6 lg:px-12">
         <h2 className="text-3xl font-bold mb-6 text-center dark:text-white">
           👨‍💻 {title[language]}
         </h2>
@@ -77,22 +94,22 @@ const ProfessionalExperience = () => {
           {pros.map((pro, index) => (
             <main
               key={index}
-              className="flex flex-col md:flex-row p-6 bg-white dark:bg-gray-900 shadow-md rounded-md md:transition-transform md:duration-800 md:ease-in-out md:transform md:hover:scale-110 md:hover:opacity-90"
+              className="flex flex-col md:flex-row overflow-hidden bg-white dark:bg-gray-900 shadow-lg rounded-2xl border border-gray-200 dark:border-gray-700 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-in-out"
             >
               <div className="flex w-full h-1/4 md:h-full md:w-1/3 md:flex-none">
                 <img
-                  className="w-full h-auto md:h-full object-cover"
+                  className="w-full h-48 md:h-full object-cover rounded-t-2xl md:rounded-l-2xl md:rounded-t-none"
                   src={pro.image}
-                  alt="Image experience"
+                  alt="Experience illustration"
                 />
               </div>
-              <div className="flex flex-col w-full md:w-2/3 p-6">
-                <h3 className="mb-4 text-xl font-bold dark:text-white">
+              <div className="flex flex-col w-full md:w-2/3 p-6 space-y-3">
+                <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
                   {pro.title[language]}
                 </h3>
-                <h2 className="text-blue-400 mb-4">{pro.period[language]}</h2>
+                <h2 className="text-blue-500 font-medium mb-3">{pro.period[language]}</h2>
 
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-gray-600 leading-relaxed dark:text-gray-300">
                   {pro.description[language]}
                 </p>
               </div>
